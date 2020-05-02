@@ -1,0 +1,72 @@
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 20px 300px 20px 300px; 
+    background: $rosa;
+    color: white;
+
+}    
+
+.subscribe__titulo{
+    font-size: 30px;
+    font-weight: 700;
+    
+
+}
+.subscribe__titulo2{
+    margin: 0;
+    
+
+
+}
+.subscribe__input{
+    height: 40px;
+    width: 500px;
+    border-radius: 13px;
+    outline: none; 
+    margin-top: 0px;
+    border: solid $amarillo;
+}
+
+
+
+.subscribe__boton{
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    height: 50%;
+    width: 21%;
+    background-color: $amarillo;
+    border-radius: 11em;
+    border: none;
+    transition: background-color .5s ease;
+    outline: none;
+    display: flex;
+    margin-top: 15px;
+    padding:9px;
+    
+
+}
+
+.subscribe__boton:hover{
+    background-color: $azul;
+    cursor: pointer;
+}
+
+@media (max-width: $breakpoint-sm){
+
+    .subscribe{
+        padding: 40px; 
+    } 
+
+    .subscribe__input{
+        width: 400px;
+    }
+    
+    .subscribe__boton{
+        width: 34%;
+    }
+    
+}

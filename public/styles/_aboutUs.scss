@@ -1,0 +1,41 @@
+
+.aboutUs{
+    display: flex;
+}
+
+.aboutUs__Image{
+    width:100%;
+}
+
+.aboutUs__ImageBoy{
+    width:100%;
+}
+
+.aboutUs__contenedorTexto{
+    color: white;
+    padding: 1.5em;
+    width: 100%;
+}
+
+.aboutUs__titulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tituloQuinientos{
+    background-color:$rosa;
+    justify-content: center;
+    margin: 0px 20px 0px 0px;
+    font-size: 60px;
+}
+.tituloQuinientos h1{
+    margin: 0;
+
+
+} 
+.tituloDos{
+    margin: 0;
+    font-size: 15px;
+    width: 400px;
+}

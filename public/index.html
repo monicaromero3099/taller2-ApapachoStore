@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apapacho</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    
+    <!-- Esto es la BARRA inical -->
+    
+    <section>
+        
+        <header class="mainInicio">
+            
+            <!-- parteInical- (buscador y barra de menú) ancho de la pantalla-->
+            
+            
+            <a class="contenedor mainInicio__contenedor" href="#">
+                <!--logo que a la vez es un link (a)-->
+                <img class="mainInicio__logo" src="./images/logo-menu.png" alt="">
+            </a>
+            
+            <nav class="mainNav">
+                <!-- barra de menu, que a su vez son links-->
+                <div class="contenedor mainNav__contenedor">
+                    <a href="#" class="mainNav__link">Acerca de nosotros</a>
+                    <a href="/tienda" class="mainNav__link ">Tienda</a>
+                    <a href="#" class="mainNav__link">Testimonios</a>
+                    <a href="#" class="mainNav__link">Contáctenos</a>
+                </div>
+            </nav>
+            
+            
+            <img class="burgerBtn" src="./images/burgerBtn.png" alt="">
+            
+            
+        </header>
+        
+    </section>
+    
+    <section class="banner">
+        <img class="banner__imagen" src="./images/imagenInicio.png" alt="">
+    
+        <div class="banner__info">
+            <h1 class="banner__titulo"> <strong>Peluches</strong> <br /> </h1>
+            <p class="banner__titulo2">que acarician <br /> CON EL ALMA</p>
+            
+            <p class="banner__parrafoUno">
+                Una campaña que apoya a los niños<br />
+                con cáncer a nivel nacional.<br />
+                <br />
+                
+                Miles de peluches serán entregados<br />
+                para donar recursos necesarios para<br />
+                niños de escasos recursos en<br />
+                condiciones adversas.
+            </p>
+            <button class="banner__boton">
+                CONOCE MÁS            
+            </button>
+        </div> 
+    
+    </section>
+
+    <section class="mainTestimonios">
+
+        <div class="mensaje1__contenedor">
+            <p><strong>Testimonios</strong> de los niños beneficiados</p>
+        </div>
+    
+        <article class="mainTestimonios__contenedor">
+            <div class="contenedorUno">
+                <img src="./images/emma.png" alt="">
+                <p class="mainTestimonios__parrafo"> 
+                    Leire nació sana y feliz el 3 de diciembre de 2016. En noviembre de 2018 se cayó, como puede caerse cualquier niño, pero lo malo fue que ella empezó a cojear. Fuimos a urgencias y le dieron un analgésico para el dolor y nos mandaron que guardara cuatro o cinco días de reposo.
+                </p>
+                <button>
+                    CONOCE MÁS
+                </button>
+            </div>
+
+            <div class="contenedorDos">
+                <img src="./images/luci.png" alt="">
+                <p class="mainTestimonios__parrafo">
+                    Era el mes de abril de 2018 cuando mi pequeña Alba empezó con una leve cojera y algo de fiebre. Fuimos al hospital, allí nos dijeron que eran placas y le recetaron un antibiótico.
+                    A los cinco días no mejoraba: andaba peor, estaba más cansada, triste y sin apenas ganas de jugar.
+                </p>
+                <button>
+                    CONOCE MÁS
+                </button>
+            </div>
+
+            <div class="contenedorTres">
+                <img src="./images/sofi.png" alt="">
+                <p class="mainTestimonios__parrafo">
+                     “Somos Noelia y Oscar, la madre y el padre de Rafa, a quién con un año y nueve meses le diagnosticaron leucemia linfoblástica aguda. Habíamos oído hablar de la enfermedad, pero realmente no la conocíamos. No sabíamos el duro camino que nos quedaba por recorrer y cómo esta enfermedad cambiaría nuestras vidas.
+
+                </p>
+                
+                <button>
+                    CONOCE MÁS
+                </button>
+
+            </div>
+            
+        </article>
+
+    </section>
+    
+
+    <div class="mensaje2__contenedor">
+            <p> Contamos con una gran variedad de <strong>peluches</strong> </p>
+    </div>
+
+    <section class="especificaciones">
+        
+            <button onclick="handleButtonI()" class="btnIzq">
+                <img class="btnIzq__image" src="./images/bprev.png" alt="">
+            </button>
+        
+        <div class="especificaciones__mobile">
+            <img class="especificaciones__image" src="" alt="">
+    
+            <div class="table">
+                <table>
+                    <tr>
+                        <th colspan="2">Antialégenicos</th>
+                    </tr>
+                    <tr>
+                        <td id="especificaciones__change" class="dimensiones">20cmx30cm</td><td>dimensiones</td>
+                    </tr>
+                    <tr>
+                        <td class="poliester">80%</td><td>poliester</td>
+                    </tr>
+                    <tr>
+                        <td class="algodon">20%</td><td>algodón</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+            <button onclick="handleButtonD()" class="btnDer">
+                <img class="btnDer__image" src="./images/pnext.png" alt="">
+            </button>
+    
+        </section>    
+
+    <section class="aboutUs">
+    
+        <div class="aboutUs__Image" >
+            <img class="aboutUs__ImageBoy" src="./images/boy-bear.png" alt="">
+        </div>
+        
+        <div class="aboutUs__contenedorTexto">
+            
+            <div class="aboutUs__titulo">
+                
+                <div class="tituloQuinientos">
+                    <h1>50%</h1>
+                </div>
+                
+                <div class="tituloDos">
+                    <h2>de las ganancias </br>son donadas a niños </br> con cancér a nivel nacional</h2>
+                </div>
+            </div>
+            
+            <h3>Apapacho</h3>
+            <p>más que una marca es un iniciativa que se creó gracias a la necesidad de apoyo de tantas fundaciones
+                dedicadas a la ayuda de niños con Cáncer.</p>
+                <a href="#" class="mainAboutUs__link"> >CONOCE MÁS</a>
+        </div>
+            
+    </section>
+
+    <img class="publicidad__uno" src="./images/publicidadUno.png" alt="">
+    
+
+    <section class="mensajes">
+
+        <div class="mensajes__contenedor">
+                <p>Cada <strong>peluche</strong> viene con una tarjeta personalizada con un corto mensaje del niño al cual le has brindado tu apoyo!</p>
+                <br>
+                <p>¡Dale un vistazo a algunas de ellas!</p>
+        </div>
+
+        <section class="sliderMensage">
+                <img class="sliderMensage__image" src="./images/carta1.png" alt="">
+             
+                <input class="sliderMensage__input" type="range" min="1" max="3" step="1" value="1">
+        </section>
+
+    </section>
+
+        <br><br><br><br>
+    
+        
+    <section class="publicidad">
+        <img class="publicidad__dos" src="./images/publicidadDos.png" alt="">
+    </section>   
+
+    <section class="subscribe">
+        <p class="subscribe__titulo">Recibe noticias y promociones especiales</p>
+        <p class="subscribe__titulo2">      Correo</p>
+        <input class="subscribe__input" type="correo electronico">
+        <button class="subscribe__boton">
+            SUSCRIBIRSE
+        </button>
+    </section>  
+
+
+    <script src="./main.js"></script>  
+
+
+</body>
+
+<iframe class="mainvideo__video" src="https://www.youtube.com/watch?v=b0xBM_m8Ahk&t=29s" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+
+<footer class="mainFooter">     
+
+    <div class="mainfooter__redes">
+
+        <a href="#">
+            <img class="mainfooter__image" src="./images/face.png" alt="">
+
+        <a href="#">    
+            <img class="mainfooter__image" src="./images/insta.png" alt="">
+        </a>
+
+        <a href="#">    
+            <img class="mainfooter__image" src="./images/youtube.png" alt="">
+        </a>
+
+        <a href="#">    
+            <img class="mainfooter__image" src="./images/tw.png" alt="">
+        </a>
+
+        <a href="#">        
+            <img class="mainfooter__image" src="./images/whapt.png" alt="">
+        </a>
+
+    </div>
+
+        
+    <div class="mainfooter__banner">
+
+        <a href="#" class="mainfooter__link">Acerca de nosotros</a>
+        <a href="#" class="mainfooter__link ">Tienda</a>
+        <a href="#" class="mainfooter__link">Testimonios</a>
+        <a href="#" class="mainfooter__link">Contáctenos</a>
+               
+    </div>
+
+    <section> 
+        <img class="mainfooter__logo" src="./images/tipography.png" alt="">
+    </section>
+
+    <div class="mainfooter__information">
+        <a href="#" class="mainfooter__info">Copyright © 2020  apapacho</a>
+        <a href="#" class="mainfooter__info">Reservados todos los derechos</a>
+        <a href="#" class="mainfooter__info">Aviso Legal</a>
+        <a href="#" class="mainfooter__info">Política de Privacidad</a>
+        <a href="#" class="mainfooter__info">Política de cookies</a>
+    </div>    
+
+</footer>
+
+</html>

@@ -1,0 +1,180 @@
+
+$azul: #79aded;
+$amarillo:#efd9aa;
+$rosa: #ffaaaf;
+$gris:#606060;
+$breakpoint-sm: 575px;
+
+
+*{
+    box-sizing: border-box; 
+}
+
+html, body{
+    font-family: Montserrat;
+    margin: 0;
+    font-size: 20px;
+    background-color: $azul;
+}
+/* _______________Menú de navegación principal______________________*/
+
+/* contiene todo en una columna centrada */
+
+.mainInicio{
+    background-color: $azul;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor{
+    max-width: 60rem;
+    margin: 0px auto; /* para que deje el espacio a lado y lado*/
+    display: flex; /* para que sus elementos queden en linea*/
+    padding: 3px 5px; /* espacio a lado y lado*/
+}
+
+.mainInicio__logo{
+    width: 17rem;
+    height: 3.35rem;
+    margin-top: 2rem;
+}
+
+.mainNav{
+    display: wrap;
+    padding: 3rem 5rem; /* espacio a lado y lado*/
+}
+
+.mainNav__link{
+    color:#fff;
+    text-decoration: none;
+    padding: .3em .4em;
+    font-size: 1em;
+}
+
+.mainNav__link:hover{
+    color: $amarillo;
+}
+
+.mainnav__link{
+    margin-left: -.4em;
+}
+
+
+.burgerBtn{
+    width: 2em;
+    height: 2em;
+    display: none;
+    cursor: pointer;
+}
+
+/* _______________BANNER INICIAL!!!______________________*/
+
+.banner{
+    background-image: url(../images/imagenInicio.png);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 1000px;
+    margin: 0;  
+}
+
+.banner__imagen{
+    opacity: 0;
+}
+
+.banner__info{
+    position: absolute;
+    top: 40em;
+    left: 10em;  
+    font-size: 60%; 
+    color: white;
+ 
+  }
+
+ 
+.banner__titulo{
+    -webkit-text-fill-color: none;
+    -webkit-text-stroke-width: .03em;
+    -webkit-text-stroke-color:white;
+    color: rgba(0, 0, 0, 0.1);
+    font-size: 9em;
+    font-weight: 700;
+    margin:0;
+}
+
+.banner__titulo2{
+font-style: normal;
+font-weight: 700;
+font-size: 6em;
+margin:0;
+
+}
+.banner__parrafoUno {
+    font-size: 2em;
+}
+
+ 
+.banner__boton{
+    font-size: 2em;
+    font-weight: 200;
+    color: white;
+    height: 100%;
+    width: 50%;
+    background-color: $amarillo;
+    border-radius: 11em;
+    border: none;
+    transition: background-color .5s ease;
+    outline: none;
+}
+.banner__boton:hover{
+    background-color: $azul;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: $breakpoint-sm){
+
+    /* _______________ media -- barra de menu ______________________*/
+
+    .burgerBtn{
+        display: flex;
+        margin-right: 9%;
+        margin-top: 10%;
+    }
+
+    .mainNav{
+        position: absolute;
+        display: none;
+    }
+
+    .banner{
+        background-image: none;
+        height: 840px;
+    }
+
+    .banner__imagen{
+        opacity: 1;
+        width: 100%;
+        height: 400px;
+    }
+
+    /* _______________ media -- Bannner ______________________*/
+
+    .banner__info{
+        position: absolute;
+        justify-content: center;
+        font-size: 40%;
+        top: 580px;
+    }
+}
+
+@import 'AboutUs';
+@import 'testimonios';
+@import 'mensajes';
+@import 'table';
+@import 'subscribe';
+@import 'footer';
+@import 'titulos';
+@import 'list';
+

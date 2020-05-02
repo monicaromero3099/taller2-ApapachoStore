@@ -1,0 +1,115 @@
+table{
+    color: white;
+    height: 400px;
+    margin: 50px 50px 50px 0px;
+    display: flex;
+}
+
+.especificaciones__mobile{
+    display: flex;
+    flex-direction: row;
+}
+th{
+    padding: 20px;
+    border: 1px solid white;
+    text-align: center;
+}
+td{
+    padding: 20px;
+    border: 1px solid white;
+}
+
+.especificaciones{
+    display: flex;
+    justify-content: center;
+}
+
+.especificaciones__image{
+    width: 500px;
+    height: 500px;
+}
+
+.dimensiones{
+
+}
+
+.poliester{
+
+}
+
+.algodon{
+
+}
+
+.btnDer__image{
+    width: 100px;
+    height: 100px;
+}
+
+.btnIzq__image{
+    width: 100px;
+    height: 100px;
+}
+
+.btnDer{
+    width: 90px;
+    height: 90px;
+    background: $azul;
+    border: 0px solid $azul;
+    outline: none; 
+    margin-top: 200px;
+    cursor: pointer;
+}
+
+.btnIzq{
+    width: 90px;
+    height: 90px;
+    background: $azul;
+    border: 0px solid $azul;
+    outline: none; 
+    margin-top: 200px;
+    cursor: pointer;
+    
+}
+
+@media (max-width: $breakpoint-sm){
+    
+    .especificaciones__image{
+        width: 380px;
+        height: 380px;
+    }
+
+    .especificaciones__mobile{
+        flex-direction: column;
+    }
+
+    .btnDer__image{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .btnIzq__image{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .btnDer{
+        width: 45px;
+        height: 45px;
+    }
+    
+    .btnIzq{
+        width: 45px;
+        height: 45px;
+    }
+
+    table{
+        font-size: 20px;
+        margin: 20px;
+
+    }
+}
+
+
+
+

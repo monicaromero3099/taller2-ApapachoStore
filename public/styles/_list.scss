@@ -1,0 +1,46 @@
+.container{
+    width: 100%;
+    display: flex;
+    position: relative;
+}    
+
+.filters{
+    padding-left: 80px;
+    font-size: 13px;
+    color: white;
+    width: 30%;
+        &__item{
+            font-weight: 400;
+            font-size: 13px;
+           
+        }
+
+    }
+
+.products{
+    width: 70%;
+    max-width: 70%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+    padding-right: 100px;
+    padding-left: 40px;
+
+}
+
+.thumb{
+    
+    padding:20px;
+    font-size: 15px;
+    width: 151px;
+    
+    &__name{
+        font-size: 15px;
+        color: #606060;
+    }
+    
+}  
+
+
