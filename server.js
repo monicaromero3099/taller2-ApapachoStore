@@ -9,7 +9,7 @@ const path= require('path');
 const exphbs = require ('express-handlebars');
 
 //
-const configureRoutes = require('./routes')
+const configureRoutes = require('./routes');
 
 //instalar servidor de express/APLICACIÓN cree un nuevo servidor y ponlo en la
 //variable- crear servidor
@@ -41,7 +41,9 @@ client.connect(function(err) {
 
   const db = client.db(dbName);
 
-  configureRoutes (app, db);
+  configureRoutes(app, db);
+  const collection = db.collection('products');
+
 });
 app.listen(3000, function () {
   console.log('servidor iniciado en puerto 3000');
