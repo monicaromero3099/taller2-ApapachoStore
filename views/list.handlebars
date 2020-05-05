@@ -1,5 +1,25 @@
 
   <div class="top-order"></div>
+
+    <nav>
+  Filtro por precio
+  <select>
+    <option value="" disabled="true" selected="true">Selecciona una opción...</option>
+    <option value="60000">Menor a $60</option>
+    <option value="700000">Menor a $100</option>
+  </select>
+
+  <p>
+    <label for="amount">Price range:</label>
+    <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+  </p>
+
+  <div id="slider-range"></div>
+  <button class="searchbtn">Buscar</button>
+
+
+  <input type="text" class="search_input">
+</nav>
   
   <main class="container">
 
@@ -38,3 +58,5 @@
     {{/each}}
   </section>
 </main>
+
+<script src="scripts/client.js"></script>

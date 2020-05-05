@@ -9,9 +9,12 @@ function configureRoutes(app, db) {
 
   //ruta para lista de productos con handlebar
   app.get('/tienda', function (req, res) {
-    
+
+    var filters = {};
+
+  
     const collection = db.collection('products');
-    collection.find({}).toArray(function (err, docs) {
+    collection.find(filters).toArray(function (err, docs) {
       assert.equal(err, null);
 
       var context = {
@@ -20,12 +23,13 @@ function configureRoutes(app, db) {
       res.render('list', context);
 
     });
-    //objeto contexto
-   
-
-
-
+    //objeto context
+    
+    
     if (req.query.price_lt) {
+      filters.price_lt = {
+        $lt: parseInt(req.query.price_lt)
+      }
 
     }
 
@@ -40,6 +44,7 @@ function configureRoutes(app, db) {
     if (req.query.search) {
 
     }
+
 
   });
 
