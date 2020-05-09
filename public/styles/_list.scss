@@ -13,7 +13,26 @@
         &__item{
             font-weight: 400;
             font-size: 13px;
+            margin: 0px 0px 0px 10px;
            
+        }
+        &__container{
+            width: 13px;
+            height: 13px;
+            background: white;
+            border-radius: 2px;
+
+        }
+        &__container--click{
+            background: $amarillo;
+            
+
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            display: flex;
         }
 
     }

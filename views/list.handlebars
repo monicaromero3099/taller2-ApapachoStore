@@ -21,42 +21,71 @@
   <input type="text" class="search_input">
 </nav>
   
-  <main class="container">
+    <main class="container">
 
-  <section class="filters">
+      <section class="filters">
 
-    <h2 class="filters__title">CATEGORÍA</h2>
-      <h3 class="filters__item">Disney</h3>
-      <h3 class="filters__item">Apapacho Oficial</h3>
-      <h3 class="filters__item">Pixar</h3>
-      <h3 class="filters__item">My little ponny</h3>
-      </br>
+        <h2 class="filters__title">CATEGORÍA</h2>
 
-    <h2 class="filters__title">TEMÁTICA</h2>
-      <h3 class="filters__item">San Valentine</h1>
-      <h3 class="filters__item">Halloween</h1>
- </br>
-    <h2 class="filters__title">MATERIAL</h2>
-      <h3 class="filters__item">Poliester</h3>
-      <h3 class="filters__item">Felpa</h3>
- </br>
-  </section> 
+            <a href="/tienda/?categoty=Disney">
+            <div class="filters__container{{#if isDisney }} filters__container--click{{/if}}"></div>
+            <h3 class="filters__item">Disney</h3></a>
 
-  <section class="products">
+            <a href="/tienda/?categoty=ApapachoOficial">
+            <div class="filters__container{{#if isApapachoOficial }} filters__container--click{{/if}}"></div>
+            <h3 class="filters__item">isApapachoOficial</h3></a>
 
-    {{#each products}}
-    <div class="thumb">
-      <a href="/producto/{{ name }}" class="thumb__link">
-        <img class="thumb__img" src="{{ img }}" alt="">
-        <h4 class="thumb__name">{{ name }}</h4>
-        <h4 class="thumb__tam">{{ height }} cm - Alto</h4>
-        <h4>${{price}}</h4>
-        <h4>{{rating}}</h4>
-        <button class="thumb__button">Añadir al carrito</button>
-      </a>
-    </div>
-    {{/each}}
-  </section>
-</main>
+            <a href="/tienda/?categoty=Pixar">
+            <div class="filters__container{{#if Pixar }} filters__container--click{{/if}}"></div>
+            <h3 class="filters__item">Pixar</h3></a>
 
-<script src="scripts/client.js"></script>
+            <a href="/tienda/?categoty=MyLittlePonny">
+            <div class="filters__container{{#if isMyLittlePonny }} filters__container--click{{/if}}"></div>
+            <h3 class="filters__item">My little ponny</h3></a>
+ 
+
+          </br>
+
+        <h2 class="filters__title">TEMÁTICA</h2>   
+        
+            <a href="/tienda/?tematic=SanValantine">
+            <div class="filters__conteiner{{#if SanValantine }} filters__container--click{{/if}}"></div>
+            <h3 class="filters__item">San Valentine</h3></a>
+            
+            <a href="/tienda/?tematic=Halloween">
+            <div class="filters__conteiner{{#if isHalloween }} filters__container--click{{/if}}"></div>
+            <h3 class="filters__item">Halloween</h3></a>
+
+    </br>
+    
+        <h2 class="filters__title">MATERIAL</h2>
+
+          <a href="/tienda/?material=poliester">
+          <div class="filters__conteiner{{#if poliester }} filters__container--click{{/if}}"></div>
+          <h3 class="filters__item">poliester</h3></a>
+          
+          <a href="/tienda/?material=felpa">
+          <div class="filters__conteiner{{#if isfelpa }} filters__container--click{{/if}}"></div>
+          <h3 class="filters__item">felpa</h3></a>
+
+    </br>
+      </section> 
+
+    <section class="products">
+
+      {{#each products}}
+      <div class="thumb">
+        <a href="/producto/{{ name }}" class="thumb__link">
+          <img class="thumb__img" src="{{ img }}" alt="">
+          <h4 class="thumb__name">{{ name }}</h4>
+          <h4 class="thumb__tam">{{ height }} cm - Alto</h4>
+          <h4>${{price}}</h4>
+          <h4>{{rating}}</h4>
+          <button class="thumb__button">Añadir al carrito</button>
+        </a>
+      </div>
+      {{/each}}
+    </section>
+  </main>
+
+<script src="/scripts/client.js"></script>

@@ -10,28 +10,34 @@ function configureRoutes(app, db) {
   //ruta para lista de productos con handlebar
   app.get('/tienda', function (req, res) {
 
-    var filters = {};
+    var filters = {
+      
+    };
 
-  
-    const collection = db.collection('products');
-    collection.find(filters).toArray(function (err, docs) {
-      assert.equal(err, null);
-
-      var context = {
-        products: docs,
-      }
-      res.render('list', context);
-
-    });
-    //objeto context
-    
-    
     if (req.query.price_lt) {
-      filters.price_lt = {
+      filters.price = {
         $lt: parseInt(req.query.price_lt)
       }
-
     }
+
+    if (req.query.categoty) {
+      filters.categoty = {
+        $eq: req.query.categoty
+      }
+    }
+
+    if (req.query.tematic) {
+      filters.tematic = {
+        $eq: req.query.tematic
+      }
+    }
+
+    if (req.query.material) {
+      filters.material = {
+        $eq: req.query.material
+      }
+    }
+
 
     if (req.query.weight_lt) {
 
@@ -44,6 +50,25 @@ function configureRoutes(app, db) {
     if (req.query.search) {
 
     }
+  
+    const collection = db.collection('products');
+    collection.find(filters).toArray(function (err, docs) {
+      assert.equal(err, null);
+
+      var context = {
+        products: docs,
+        isDisney: req.query.categoty === 'Disney',
+        isApapachoOficial: req.query.categoty === 'ApapachoOficial',
+        isDisney: req.query.categoty === 'Disney',
+        isDisney: req.query.categoty === 'Disney',
+        isDisney: req.query.categoty === 'Disney',
+      }
+      res.render('list', context);
+
+    });
+    //objeto context
+    
+    
 
 
   });

@@ -707,6 +707,26 @@ td {
 .filters__item {
   font-weight: 400;
   font-size: 13px;
+  margin: 0px 0px 0px 10px;
+}
+
+.filters__container {
+  width: 13px;
+  height: 13px;
+  background: white;
+  border-radius: 2px;
+}
+
+.filters__container--click {
+  background: #efd9aa;
+}
+
+.filters a {
+  text-decoration: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .products {
