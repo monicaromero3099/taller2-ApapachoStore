@@ -1,11 +1,41 @@
 const assert = require('assert');
-
+const ObjectId = require('mongodb').ObjectId;
 
 function configureRoutes(app, db) {
 
-  app.get('/', function (request, response) {
+  //app.get ('/404')
+
+  app.get('/producto/:name/:id', function (req, res) {
+
+    if(req.params.id != 24){
+      res.redirect('/404');    
+    }
+
+    const filter = {
+      _id:{
+        $eq: new ObjectId(req.params.id)
+      }
+    };
+
+    const collection = db.collection('products');
+    collection.find(filter).toArray(function (err, docs) {
+      assert.equal(err, null);
+
+      if(docs.lenght == 0){
+        res.redirect('/404');    
+      
+      }
+
+      var context = docs[0];
+
+      console.log(docs); 
+
+    res.render('product', context);
 
   });
+});
+
+  
 
   //ruta para lista de productos con handlebar
   app.get('/tienda', function (req, res) {
