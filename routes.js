@@ -1,5 +1,5 @@
 const assert = require('assert');
-const ObjectId = require('mongodb').ObjectId;
+
 
 function configureRoutes(app, db) {
 
@@ -51,17 +51,44 @@ function configureRoutes(app, db) {
 
     }
   
+    var sortings = {};
+
+    if (req.query.sort == "pricemM"){
+      sortings.price = 1;
+    }
+
+    if (req.query.sort == "priceMm"){
+      sortings.price = -1;
+    }
+
+    if (req.query.sort == "heightmM"){
+      sortings.height = 1;
+    }
+
+    if (req.query.sort == "heightMm"){
+      sortings.height = -1;
+    }
+    if (req.query.sort == "rating"){
+      sortings.rating = -1;
+    }
+
     const collection = db.collection('products');
-    collection.find(filters).toArray(function (err, docs) {
+    collection.find(filters).sort(sortings).toArray(function (err, docs) {
       assert.equal(err, null);
 
       var context = {
         products: docs,
         isDisney: req.query.categoty === 'Disney',
         isApapachoOficial: req.query.categoty === 'ApapachoOficial',
-        isDisney: req.query.categoty === 'Disney',
-        isDisney: req.query.categoty === 'Disney',
-        isDisney: req.query.categoty === 'Disney',
+        isPixar: req.query.categoty === 'Pixar',
+        isMyLittlePonny: req.query.categoty === 'MyLittlePonny',
+
+        isSanValantine: req.query.tematic === 'SanValantine',
+        isHalloween: req.query.tematic === 'Halloween',
+        
+        ispoliester: req.query.material === 'poliester',
+        isfelpa: req.query.material === 'felpa',
+        
       }
       res.render('list', context);
 

@@ -2,11 +2,16 @@
   <div class="top-order"></div>
 
     <nav>
-  Filtro por precio
-  <select>
+  Ordenar por:
+  <select class="order__container">
     <option value="" disabled="true" selected="true">Selecciona una opción...</option>
-    <option value="60000">Menor a $60</option>
-    <option value="700000">Menor a $100</option>
+    <option value="pricemM">Precio de Menor a mayor</option>
+    <option value="priceMm">Precio de Mayor a menor</option>
+    <option value="heightmM">Tamaño de Menor a mayor</option>
+    <option value="heightMm">Tamaño de Mayor a menor</option>
+    <option value="rating">Los mejor votados</option>
+    
+    
   </select>
 
   <p>
@@ -33,10 +38,10 @@
 
             <a href="/tienda/?categoty=ApapachoOficial">
             <div class="filters__container{{#if isApapachoOficial }} filters__container--click{{/if}}"></div>
-            <h3 class="filters__item">isApapachoOficial</h3></a>
+            <h3 class="filters__item">Apapacho Oficial</h3></a>
 
             <a href="/tienda/?categoty=Pixar">
-            <div class="filters__container{{#if Pixar }} filters__container--click{{/if}}"></div>
+            <div class="filters__container{{#if isPixar }} filters__container--click{{/if}}"></div>
             <h3 class="filters__item">Pixar</h3></a>
 
             <a href="/tienda/?categoty=MyLittlePonny">
@@ -49,11 +54,11 @@
         <h2 class="filters__title">TEMÁTICA</h2>   
         
             <a href="/tienda/?tematic=SanValantine">
-            <div class="filters__conteiner{{#if SanValantine }} filters__container--click{{/if}}"></div>
+            <div class="filters__container{{#if isSanValantine }} filters__container--click{{/if}}"></div>
             <h3 class="filters__item">San Valentine</h3></a>
             
             <a href="/tienda/?tematic=Halloween">
-            <div class="filters__conteiner{{#if isHalloween }} filters__container--click{{/if}}"></div>
+            <div class="filters__container{{#if isHalloween }} filters__container--click{{/if}}"></div>
             <h3 class="filters__item">Halloween</h3></a>
 
     </br>
@@ -61,12 +66,12 @@
         <h2 class="filters__title">MATERIAL</h2>
 
           <a href="/tienda/?material=poliester">
-          <div class="filters__conteiner{{#if poliester }} filters__container--click{{/if}}"></div>
-          <h3 class="filters__item">poliester</h3></a>
+          <div class="filters__container{{#if ispoliester }} filters__container--click{{/if}}"></div>
+          <h3 class="filters__item">Poliester</h3></a>
           
           <a href="/tienda/?material=felpa">
-          <div class="filters__conteiner{{#if isfelpa }} filters__container--click{{/if}}"></div>
-          <h3 class="filters__item">felpa</h3></a>
+          <div class="filters__container{{#if isfelpa }} filters__container--click{{/if}}"></div>
+          <h3 class="filters__item">Felpa</h3></a>
 
     </br>
       </section> 
