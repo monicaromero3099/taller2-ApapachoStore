@@ -6,9 +6,10 @@ function configureRoutes(app, db) {
   //app.get ('/404')
 
   app.get('/producto/:name/:id', function (req, res) {
-
-    if(req.params.id != 24){
-      res.redirect('/404');    
+    
+    if(req.params.id.length != 24){
+      res.redirect('/404');
+      return;
     }
 
     const filter = {
@@ -23,6 +24,7 @@ function configureRoutes(app, db) {
 
       if(docs.lenght == 0){
         res.redirect('/404');    
+        return;
       
       }
 
@@ -67,20 +69,7 @@ function configureRoutes(app, db) {
         $eq: req.query.material
       }
     }
-
-
-    if (req.query.weight_lt) {
-
-    }
-
-    if (req.query.rating_lt) {
-
-    }
-
-    if (req.query.search) {
-
-    }
-  
+    
     var sortings = {};
 
     if (req.query.sort == "pricemM"){
@@ -141,6 +130,32 @@ function configureRoutes(app, db) {
   app.get('/sobre-nosotros', function (req, res) {
 
   });
+//mostrar form
+  app.get('/checkout', function (req, res) {
+    res.render('checkout');
 
-}
+  });
+//recibir info del form
+  app.post('/checkout', function (req, res) {
+
+    var { name, adress} = req.body;
+
+    req.body.create_date = new Date();
+
+    if(!name || !adress){
+      res.send('error');
+      //res.redirect('/checkout?error=true');
+      return;
+    }
+
+
+
+    const collection = db.collection('orders');
+    collection.insert(req.body);
+    res.send('test'); 
+    console.log(req.body);
+
+  });
+
+  };
 module.exports = configureRoutes;

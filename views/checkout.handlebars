@@ -1,0 +1,72 @@
+<section class="checkout">
+
+    <form action="/checkout" method="POST">
+        <h1>Información de contacto</h1>
+
+        <label>
+            Correo electronico
+            <input class="form__input" placeholder="Correo electronico" name="mail">
+        </label>
+
+        <div>
+            <div class="filters__container"></div>
+            <p>Quiero recibir noticias y ofertas esclusivas</p>
+        </div>
+
+        <h1>Datos de envio</h1>
+        
+        <label>
+            Nombres
+             <input class="form__input" placeholder="Nombres" name="name">
+            Apellidos
+             <input class="form__input" placeholder="Nombres" name="name">
+        </label>
+
+        <label>
+            Número de documento
+            <input class="form__input" placeholder="Correo electronico" name="mail">
+        </label>
+
+         <label>
+            Dirección de residencia 
+            <input class="form__input" placeholder="Correo electronico" name="mail">
+        </label>
+
+         <label>
+            Casa, Apartamento, Local, Barrio, etc...
+            <input class="form__input" placeholder="Correo electronico" name="mail">
+        </label>
+
+         <label>
+            País / Región
+            <input class="form__input" placeholder="Correo electronico" name="mail">
+            Provincia / Estado
+            <input class="form__input" placeholder="Correo electronico" name="mail">
+            Ciudad / Municipio
+            <input placeholder="Correo electronico" name="mail">
+        </label>
+
+        <label>
+            Teléfono
+            <input class="form__input" placeholder="Correo electronico" name="mail">
+        </label>
+
+
+
+
+        
+        <button>Continuar con el pago</button>
+
+    </form>
+
+    <div class="checkout__product">
+
+        <img class="product__dimention_image" src="{{ img }}" alt="">
+        <h1>{{ name }}</h1>
+        <p class="product__price_text"> $ {{ price }}</strong></p>
+        <p>Subtotal</p>
+        <p>Envios</p>
+        <h3>Total</h3>
+
+    </div>
+</section>

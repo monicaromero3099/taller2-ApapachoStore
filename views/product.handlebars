@@ -1,11 +1,53 @@
-<h1>el producto</h1>
-<header class="product__header">
-    <h2>titulo del producto</h2>
-</header>
-<section>
-    <img src="/images/product1.jpg" alt="">
+<section class="product">
+
+
+    <div class="product__Image">
+        <img class="product__dimention_image" src="{{ img }}" alt="">
+
+    </div>
+
+    <div class="product__description">
+
+        <h1>{{ name }}</h1>
+        <p>Rating:</p>
+        <div class="product__style">
+        </div>
+        <h4>{{ rating }} Estrellas</h4>
+
+        <p>Precio:</p>
+        <div class="product__style">
+        </div>
+        <p class="product__price_text"> $ {{ price }}</strong></p>
+
+        <p>Dimensiones:</p>
+        <p class="product__dimentions"> {{ height }} cm - Alto </p>
+        <p class="product__dimentions"> {{ weight }} cm - Ancho </p>
+
+        <p>Cantidad:</p>
+        <div class="product__containerCuantity">
+            <img src="/images/products/menos.png" alt="">
+            <div class="product__containerNumber">
+                <p>1</p>
+            </div>
+       
+            <img src="/images/products/mas.png" alt="">
+        </div>
+        
+        <button class="product__add_to_cart"
+            data-img="{{ img }}"
+            data-name="{{ name }}"
+            data-price="{{ price }}"
+            data-id="{{ _id }}">
+            AGREGAR AL CARRITO
+        </button>
+
+        <div class="product__favorites">
+            <img class="product__coraImg" src="/images/products/cora.png" alt="">
+            <p class="product__favorites_text">Agregar a favotitos</p>
+        </div>
+
+    </div>
+
+
+
 </section>
-
-
-
-

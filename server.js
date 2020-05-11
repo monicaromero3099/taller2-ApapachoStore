@@ -15,6 +15,8 @@ const configureRoutes = require('./routes');
 //variable- crear servidor
 const app = express();
 
+app.use(express.urlencoded({extended: true}));
+
 //configurar carpeta publica
 app.use(express.static('public'));
 

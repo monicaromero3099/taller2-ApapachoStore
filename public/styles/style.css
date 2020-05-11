@@ -756,4 +756,122 @@ td {
   font-size: 15px;
   color: #606060;
 }
+
+.product {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+  padding: 100px;
+  color: #606060;
+  padding: 0;
+  margin: 0;
+}
+
+.product__dimention_image {
+  width: 453px;
+  height: 591px;
+}
+
+.product__description {
+  padding-left: 100px;
+}
+
+.product__style {
+  background-color: #79aded;
+  width: 60px;
+  height: 5px;
+}
+
+.product__price_text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.product__dimentions {
+  border: 1px solid #606060;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.product__containerNumber {
+  width: 34px;
+  height: 34px;
+  border: 2px solid #C4C4C4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  text-align: center;
+  margin: 0px 20px;
+}
+
+.product__containerCuantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product__add_to_cart {
+  width: 185px;
+  height: 34px;
+  margin: 20px 0px;
+  background: #79ADED;
+  border-color: #79aded;
+  border-radius: 3px;
+  color: white;
+  font-family: Montserrat;
+  font-size: 14px;
+}
+
+.product__coraImg {
+  width: 24px;
+  height: 19px;
+}
+
+.product__favorites_text {
+  margin: 0px 10px;
+}
+
+.product__favorites {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 3px;
+  width: 185px;
+  height: 25px;
+  background: #F2F7FD;
+  border-radius: 3px;
+  color: #79aded;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.checkout {
+  color: white;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+form {
+  width: 60%;
+}
+
+.form__input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 /*# sourceMappingURL=style.css.map */
