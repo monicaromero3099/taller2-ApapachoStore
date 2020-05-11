@@ -2,17 +2,74 @@
     color: white;
     font-size: 15px;
     display: flex;
+    padding: 0px 100px;
+
+    &__btn {
+        
+        width: 185px;
+        height: 34px;
+        margin: 20px 0px;
+
+        background: #79ADED;
+        border-color: $rosa;
+        background-color: $rosa;
+        border-radius: 3px;
+        color: white;
+        font-family: Montserrat;
+        font-size: 14px;
+    }
+
+    &__btn_pay{
+          
+        width: 185px;
+        height: 34px;
+        margin: 20px 0px;
+
+        background: #79ADED;
+        border-color: $rosa;
+        background-color: $rosa;
+        border-radius: 3px;
+        color: white;
+        font-family: Montserrat;
+        font-size: 14px;
+    }
+
+    &__form{
+        width: 60%;
+    }
+
+    &__address{
+        background-color: white;
+        color: $gris;
+        border-radius: 5px;
+        padding: 5px;
+
+
+    }
 }
 
-form{
-    width: 60%;
+.address__form{
+    width: 70%;
+
 }
+
 .form__input {
-    width: 100%;
+    width: 97%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 10px solid white;
     border-radius: 4px;
     box-sizing: border-box;
+    
   }
+
+
+
+
+.onefile{
+    display: flex;   
+    padding-right: 9px;
+
+}
+

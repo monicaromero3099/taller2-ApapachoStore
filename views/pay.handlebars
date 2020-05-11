@@ -1,0 +1,43 @@
+<section class="checkout">
+
+    <div class="checkuot__pay">
+        <h1>Pago </h1>
+        <p>Todas las transacciones son seguras y están encriptadas</p>
+        <img src="/images/products/pay.png" alt="">
+        <br><br>
+
+        <h1>Dirección de faturacción</h1>
+        <p>Selecciona la dirección que coincida con tu tarjeta o forma de pago.</p>
+
+        <div class="checkout__address">
+            <form class="address__form">
+                <input type="checkbox" name="vehicle1" value="Bike">
+                <label>La misma dirección de envío</label><br><br>
+
+                <input type="checkbox" name="vehicle2" value="Car">
+                <label>Usar una dirección de facturación distinta</label>
+            </form>
+
+
+        </div>   
+        <br>
+
+        <a href="https://www.payulatam.com/co/soluciones/pagos-en-linea/">
+            <button class="checkout__btn_pay">Finalizar pedido</button>
+        </a>
+
+
+
+    </div>
+
+    <div class="checkout__product">
+
+        <img class="product__dimention_image" src="{{ img }}" alt="">
+        <h1>{{ name }}</h1>
+        <p class="product__price_text"> $ {{ price }}</strong></p>
+        <p>Subtotal</p>
+        <p>Envios</p>
+        <h3>Total</h3>
+
+    </div>
+</section>

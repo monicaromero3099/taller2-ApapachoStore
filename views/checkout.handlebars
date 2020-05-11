@@ -1,6 +1,6 @@
 <section class="checkout">
 
-    <form action="/checkout" method="POST">
+    <form class="checkout__form" action="/checkout" method="POST">
         <h1>Información de contacto</h1>
 
         <label>
@@ -8,54 +8,68 @@
             <input class="form__input" placeholder="Correo electronico" name="mail">
         </label>
 
-        <div>
-            <div class="filters__container"></div>
-            <p>Quiero recibir noticias y ofertas esclusivas</p>
-        </div>
-
         <h1>Datos de envio</h1>
+
+        <div class="onefile">  
         
         <label>
             Nombres
              <input class="form__input" placeholder="Nombres" name="name">
+        </label>     
+
+        <label> 
             Apellidos
-             <input class="form__input" placeholder="Nombres" name="name">
+             <input class="form__input" placeholder="Apellidos" name="name">
         </label>
+        </div>
 
         <label>
             Número de documento
-            <input class="form__input" placeholder="Correo electronico" name="mail">
+            <input class="form__input" placeholder="Número de documento" name="mail">
         </label>
 
          <label>
             Dirección de residencia 
-            <input class="form__input" placeholder="Correo electronico" name="mail">
+            <input class="form__input" placeholder="Dirección de residencia" name="mail">
         </label>
 
          <label>
             Casa, Apartamento, Local, Barrio, etc...
-            <input class="form__input" placeholder="Correo electronico" name="mail">
+            <input class="form__input" placeholder="Casa, Apartamento, Local, Barrio, etc..." name="mail">
         </label>
 
-         <label>
-            País / Región
-            <input class="form__input" placeholder="Correo electronico" name="mail">
-            Provincia / Estado
-            <input class="form__input" placeholder="Correo electronico" name="mail">
-            Ciudad / Municipio
-            <input placeholder="Correo electronico" name="mail">
-        </label>
+        <div class="onefile">  
+
+            <label>
+                País / Región
+                <input class="form__input" placeholder="País / Región" name="mail">
+            </label>  
+
+             <label>
+                Provincia / Estado
+                <input class="form__input" placeholder="Provincia / Estado" name="mail">
+             </label>  
+
+             <label> 
+                Ciudad / Municipio
+                <input class="form__input" placeholder="Ciudad / Municipio" name="mail">
+
+             </label>
+
+
+        </div>    
+       
 
         <label>
             Teléfono
-            <input class="form__input" placeholder="Correo electronico" name="mail">
+            <input class="form__input" placeholder="Teléfono" name="mail">
         </label>
 
 
 
 
         
-        <button>Continuar con el pago</button>
+        <button class="checkout__btn">Continuar con el pago</button>
 
     </form>
 

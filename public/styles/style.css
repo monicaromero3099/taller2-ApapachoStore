@@ -858,20 +858,65 @@ td {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0px 100px;
 }
 
-form {
+.checkout__btn {
+  width: 185px;
+  height: 34px;
+  margin: 20px 0px;
+  background: #79ADED;
+  border-color: #ffaaaf;
+  background-color: #ffaaaf;
+  border-radius: 3px;
+  color: white;
+  font-family: Montserrat;
+  font-size: 14px;
+}
+
+.checkout__btn_pay {
+  width: 185px;
+  height: 34px;
+  margin: 20px 0px;
+  background: #79ADED;
+  border-color: #ffaaaf;
+  background-color: #ffaaaf;
+  border-radius: 3px;
+  color: white;
+  font-family: Montserrat;
+  font-size: 14px;
+}
+
+.checkout__form {
   width: 60%;
 }
 
+.checkout__address {
+  background-color: white;
+  color: #606060;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.address__form {
+  width: 70%;
+}
+
 .form__input {
-  width: 100%;
+  width: 97%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 10px solid white;
   border-radius: 4px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.onefile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 9px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -6,7 +6,7 @@ function configureRoutes(app, db) {
   //app.get ('/404')
 
   app.get('/producto/:name/:id', function (req, res) {
-    
+
     if(req.params.id.length != 24){
       res.redirect('/404');
       return;
@@ -155,6 +155,11 @@ function configureRoutes(app, db) {
     res.send('test'); 
     console.log(req.body);
 
+  });
+
+  app.get('/pay', function (req, res) {
+    res.render('pay');
+    
   });
 
   };
