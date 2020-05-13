@@ -162,5 +162,10 @@ function configureRoutes(app, db) {
     
   });
 
+  app.get('/cart', function (req, res) {
+    res.render('cart');
+    
+  });
+
   };
 module.exports = configureRoutes;

@@ -59,7 +59,7 @@ function handleButtonD(){
 function handleButtonI(){
 
     quality--;
-    buttonImage.setAttribute('src', '/images/peluche' +  quality + '.png');
+    buttonImage.setAttribute('src', './images/peluche' +  quality + '.png');
     if(quality==0){
         quality=6;
     }

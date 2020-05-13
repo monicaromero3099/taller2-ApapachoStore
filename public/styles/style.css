@@ -54,6 +54,27 @@ html, body {
   font-size: 1em;
 }
 
+.mainNav__link--cart {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px;
+}
+
+.mainNav__link--cart img {
+  margin-left: 11px;
+}
+
+.mainNav__link--cart p {
+  position: absolute;
+  top: 43px;
+  right: 112px;
+  color: white;
+}
+
 .mainNav__link:hover {
   color: #efd9aa;
 }
@@ -689,6 +710,17 @@ td {
   }
 }
 
+.top-order {
+  background-color: white;
+  height: 60px;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  text-align: right;
+  padding: 20px;
+  font-size: 14px;
+}
+
 .container {
   width: 100%;
   display: -webkit-box;
@@ -730,6 +762,7 @@ td {
 }
 
 .products {
+  font-size: 100px;
   width: 70%;
   max-width: 70%;
   background-color: white;
@@ -747,14 +780,56 @@ td {
 }
 
 .thumb {
-  padding: 20px;
-  font-size: 15px;
+  padding: 0px;
+  font-size: 10px;
   width: 151px;
+  text-align: center;
+  text-decoration: none;
 }
 
-.thumb__name {
-  font-size: 15px;
+.thumb__link {
+  text-decoration: none;
   color: #606060;
+}
+
+.thumb__text {
+  margin: 3px;
+}
+
+.thumb__price {
+  margin: 3px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.thumb__rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 3px;
+  width: 151px;
+  height: 25px;
+  background: #F2F7FD;
+  border-radius: 3px;
+  color: #79aded;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.thumb__rating_img {
+  width: 17px;
+  height: 16px;
+}
+
+.thumb__rating_text {
+  margin: 2px 0px 2px 4px;
+  padding: 0px;
+  font-size: 13px;
 }
 
 .product {
@@ -814,7 +889,7 @@ td {
 }
 
 .product__add_to_cart {
-  width: 185px;
+  width: 151px;
   height: 34px;
   margin: 20px 0px;
   background: #79ADED;
@@ -822,7 +897,7 @@ td {
   border-radius: 3px;
   color: white;
   font-family: Montserrat;
-  font-size: 14px;
+  font-size: 10px;
 }
 
 .product__coraImg {
@@ -832,6 +907,7 @@ td {
 
 .product__favorites_text {
   margin: 0px 10px;
+  font-size: 10px;
 }
 
 .product__favorites {
@@ -841,7 +917,7 @@ td {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 3px;
-  width: 185px;
+  width: 151px;
   height: 25px;
   background: #F2F7FD;
   border-radius: 3px;

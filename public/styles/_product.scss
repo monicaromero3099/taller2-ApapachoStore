@@ -55,7 +55,7 @@
     }
 
     &__add_to_cart{
-        width: 185px;
+        width: 151px;
         height: 34px;
         margin: 20px 0px;
 
@@ -64,7 +64,7 @@
         border-radius: 3px;
         color: white;
         font-family: Montserrat;
-        font-size: 14px;
+        font-size: 10px;
     }
     &__coraImg{
         width: 24px;
@@ -72,13 +72,14 @@
     }
     &__favorites_text{
         margin: 0px 10px ;
+        font-size: 10px;
     }
 
     &__favorites{
         display: flex;
         flex-wrap: wrap;
         padding: 3px;
-        width: 185px;
+        width: 151px;
         height: 25px;
         background: #F2F7FD;
         border-radius: 3px;

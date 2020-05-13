@@ -1,7 +1,5 @@
-
-  <div class="top-order"></div>
-
-    <nav>
+   
+<nav class="top-order" >
   Ordenar por:
   <select class="order__container">
     <option value="" disabled="true" selected="true">Selecciona una opción...</option>
@@ -14,16 +12,6 @@
     
   </select>
 
-  <p>
-    <label for="amount">Price range:</label>
-    <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-  </p>
-
-  <div id="slider-range"></div>
-  <button class="searchbtn">Buscar</button>
-
-
-  <input type="text" class="search_input">
 </nav>
   
     <main class="container">
@@ -82,11 +70,24 @@
       <div class="thumb">
         <a href="/producto/{{ name }}/{{ _id }}" class="thumb__link">
           <img class="thumb__img" src="{{ img }}" alt="">
-          <h4 class="thumb__name">{{ name }}</h4>
-          <h4 class="thumb__tam">{{ height }} cm - Alto</h4>
-          <h4>${{price}}</h4>
-          <h4>{{rating}}</h4>
-          <button class="thumb__button">Añadir al carrito</button>
+          <h4 class="thumb__text">{{ name }}</h4>
+          <p class="product__dimentions">{{ height }} cm - Alto</p>
+          <p class="thumb__price" >${{price}}</p>
+          
+          <div class="thumb__rating">
+            <img class="thumb__rating_img" src="/images/products/star1.png" alt="">
+            <p class="thumb__rating_text"> {{rating}} Estrellas</p>
+        </div>
+         
+
+          <button class="product__add_to_cart"
+            data-img="{{ img }}"
+            data-name="{{ name }}"
+            data-price="{{ price }}"
+            data-id="{{ _id }}">
+            AGREGAR AL CARRITO
+        </button>
+
         </a>
       </div>
       {{/each}}

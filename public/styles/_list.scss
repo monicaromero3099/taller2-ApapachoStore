@@ -1,3 +1,14 @@
+.top-order{
+    background-color: white;
+    height: 60px;
+    justify-content: right;
+    text-align: right;
+    padding: 20px;
+    font-size: 14px;
+
+}
+
+
 .container{
     width: 100%;
     display: flex;
@@ -39,7 +50,7 @@
 
 .products{
 
-
+    font-size: 100px;
     width: 70%;
     max-width: 70%;
     background-color: white;
@@ -54,15 +65,58 @@
 
 .thumb{
     
-    padding:20px;
-    font-size: 15px;
+    padding:0px;
+    font-size: 10px;
     width: 151px;
+    text-align: center;    
+    text-decoration: none;
     
-    &__name{
-        font-size: 15px;
+
+    &__link{
+        text-decoration: none;
         color: #606060;
+
     }
-    
+
+    &__text{
+        margin: 3px;
+    }
+
+    &__price{
+        margin: 3px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 24px;
+
+
+    }
+
+    &__rating{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 3px;
+        width: 151px;
+        height: 25px;
+        background: #F2F7FD;
+        border-radius: 3px;
+        color: $azul;
+        text-align: center;
+        justify-content: center;
+    }
+    &__rating_img{
+        width: 17px;
+        height: 16px;
+
+        }
+
+    &__rating_text{
+        margin: 2px 0px 2px 4px;
+        padding: 0px;
+        font-size: 13px;
+
+        }
+   
 }  
 
-
+  
+ 
